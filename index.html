@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Angular-Firebase</title>	
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body ng-app="myApp">
+	<div ng-view></div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+<script src="app/app.js"></script>
+<script src="app/controller/auth.js"></script>
+<script src="app/service/mainauth.js"></script>
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBtOAc1nZNxZMX25_xeGe7ZJfa2V99At3g",
+    authDomain: "angular-firebase-441b5.firebaseapp.com",
+    databaseURL: "https://angular-firebase-441b5.firebaseio.com",
+    projectId: "angular-firebase-441b5",
+    storageBucket: "angular-firebase-441b5.appspot.com",
+    messagingSenderId: "560318367199"
+  };
+  firebase.initializeApp(config);
+</script>
+</html>
